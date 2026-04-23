@@ -1,5 +1,5 @@
-{
-  "name": "ecommerce-frontend-ui",
+{ 
+"ecommerce-frontend-ui",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,8 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "npm install && npm run _build",
-    "_build": "npx esbuild src/index.js --bundle --outfile=build/app.js --loader:.js=jsx"
+    "build": "npm install && npm run bundle && npm run copy-html",
+    "bundle": "npx esbuild src/index.js --bundle --outfile=build/app.js",
+    "copy-html": "cp public/index.html build/index.html"
   }
 }
