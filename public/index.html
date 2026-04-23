@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>E‑commerce App</title>
-</head>
-<body>
-  <h1>E‑commerce Frontend</h1>
-  <button onclick="placeOrder()">Place Order</button>
-
-  <script>
-    function placeOrder() {
-      fetch('/api/order', { method: 'POST' })
-        .then(res => res.json())
-        .then(data => alert(data.message));
-    }
-  </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>E‑commerce Frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>

@@ -2,7 +2,12 @@
   "name": "ecommerce-frontend-ui",
   "version": "1.0.0",
   "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "scripts": {
-    "build": "echo \"Building static frontend\" && mkdir -p build && cp public/index.html build/index.html"
+    "build": "npm install && npm run _build",
+    "_build": "npx esbuild src/index.js --bundle --outfile=build/app.js --loader:.js=jsx"
   }
 }
