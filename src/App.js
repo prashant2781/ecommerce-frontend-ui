@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "40px", fontFamily: "Arial" }}>
+    <div>
       <h1>E‑commerce Frontend (React)</h1>
 
       <button onClick={callApi}>
